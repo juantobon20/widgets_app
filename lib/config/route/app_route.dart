@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../presentation/screens/screens.dart';
@@ -21,6 +20,11 @@ final appRouter = GoRouter(
       name: CardsScreen.name,
       path: '/cards',
       builder: (context, state) => const CardsScreen(),
+    ),
+    GoRoute(
+      name: ProgressScreen.name,
+      path: '/progress',
+      builder: (context, state) => const ProgressScreen(),
     ),
   ],
 );
