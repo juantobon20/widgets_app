@@ -49,6 +49,10 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
         setState(() {
           endReached = true;
         });
+      } else if (endReached && page <= (slides.length - 1.5)) {
+        setState(() {
+          endReached = false;
+        });
       }
     });
   }
