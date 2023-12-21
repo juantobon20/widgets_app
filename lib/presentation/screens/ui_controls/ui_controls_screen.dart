@@ -11,7 +11,7 @@ class UiControlsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('UI Controls'),
       ),
-      body: _UiControlsView(),
+      body: const _UiControlsView(),
     );
   }
 }
@@ -83,8 +83,7 @@ class _UiControlsViewState extends State<_UiControlsView> {
                     })),
           ],
         ),
-        
-        //TODO por aqui
+      
         CheckboxListTile(
           title: const Text('Desayuno'),
           subtitle: const Text('Quiere desayuno?'),
